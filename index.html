@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!--
+  Author: Kaja Hano
+-->
+<html>
+    <head>
+        <title>Catpension</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.7">
+        <!--JQuery links-->
+        <script
+			src="http://code.jquery.com/jquery-3.4.1.min.js"
+			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous">
+        </script>
+        <script
+        src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+        crossorigin="anonymous">
+        </script>
+        <script type="text/javascript" src="catsJS.js"></script>
+        <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="catsCSS.css" />
+    </head>
+    <body>
+        <div>
+        <!--The navigation bar-->
+        <section>
+            <nav class="menu">
+                <ul class="menu">
+                    <li class="menu"><a href="#disc">About us</a></li>
+                    <li class="menu"><a href="#foto">Fotogallery</a></li>
+                    <li class="menu"><a href="#price">Prices</a></li>
+                </ul>
+            </nav>
+        </section>
+        <!--A herader with a nice picture-->
+        <header>
+        <div class = "head-overlay">
+            <!--social media links-->
+            <div class="social">
+                <h5>Follow us on:</h5>
+                <!--links behind icons-->
+                <a href="https://www.instagram.com/"><img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/480px-Instagram_logo_2016.svg.png" alt="Instergramm"></a>
+            
+            
+                <a href="https://de-de.facebook.com/"><img class="icon" src="http://img.talkandroid.com/uploads/2013/09/Facebook_Large_Icon-450x450.png" alt="facebook"></a>
+            
+            </div>
+            
+            <!--heading-->
+            <h1 id="conny">Conny's Catpension</h1>
+        </div>
+        </header>
+
+        <!--Discription-->
+        <section class= "main-block">
+            <!--heading-->
+            <h2 id="disc">The pension</h2>
+            <!--p with discription-->
+            <p>We are a new pension. While we sarted working quite recently
+                our employes all have severall years experience raising cats
+                and are state quallified.   
+            </p>
+            <p>Our pension offers the home visits as well as the option
+                to bring the let the cats stay at our pension and play with
+                the cats here. 
+            </p>
+            <p class="warnings">The health and safty of the cats is our biggest prioity, 
+                for that reason we need to see a vaxination certificate and
+                the cats must not have or have had recently a infectious decease.
+            </p>
+        </section>
+        
+        <!--Fotogallery-->
+        <section class = "gall">
+            <!--heading-->
+            <h2 id= "foto">Fotogallery</h2>
+            <!--pictures with discription-->
+            <div class="gallery">
+                <div class="gal-overlay">
+                    <div class="gal-container">
+                        <div class="responsive">
+                            <div class="gallery-item">
+                                <img class="gallery-pic" src="/images/siblings.jpg" alt="sleeping siblings">
+                                <div class="gallery-text">Our cats Mickey and Minni</div>
+                            </div>
+                        </div>
+                        
+                        <div class="responsive">
+                            <div class="gallery-item">
+                                <img class="gallery-pic" src="/images/oldest.jpg" alt="our oldest">
+                                <div class="gallery-text">Our grandma Taira, sleeping</div>
+                            </div>
+                        </div>
+                        
+                        <div class="responsive">
+                            <div class="gallery-item">
+                                <img class="gallery-pic" src="/images/sleeping_dogs.jpg" alt="sleeping dogs">
+                                <div class="gallery-text">Dont't wake the sleeping dogs</div>
+                            </div>
+                        </div>
+                        
+                        <div class="responsive">
+                            <div class="gallery-item">
+                                <img class="gallery-pic" src="/images/it_fits.jpg" alt="If it fits">
+                                <div class="gallery-text">Minni is trying to hide from us</div>
+                            </div>
+                        </div>
+                        
+                        <div class="responsive">
+                            <div class="gallery-item">
+                            <img class="gallery-pic" src="/images/a_guest.jpg" alt="first guest">
+                            <div class="gallery-text">Our first guest is enjoying herself</div>
+                        </div>
+                        </div>
+                        
+                        <div class="responsive">
+                            <div class="gallery-item">
+                                <img class="gallery-pic" src="/images/relax_in_shadow.jpg" alt="relaxing in the shadow">
+                                <div class="gallery-text">Mickey and Minni sleeping in the shadow</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+        </section>
+        
+
+        <!--prices and services-->
+        <section class="main-block">
+            <div>
+                <!--heading-->
+                <h2 id="price">Prices and Services</h2>
+                <p>We offer two different services, visits at home
+                    and stays at our facility.
+                </p>
+                <p>If you want a home visit we come to 
+                    your house clean and feet the cat.
+                    Usually in that case you would provide the 
+                    food and other necessities for your cat.
+                </p>
+                <p>If you want to bring your cat to our facility
+                     this is also a possibility. We have room and
+                     plenty of enrichment for our feline guests. In 
+                     that case we can provide food and necessities for the 
+                     cat. Of course you can still bring the food and 
+                     other necessitis for your cat espacially if it has 
+                     special needs.
+                </p>
+                <!--table-->
+                <table class="price">
+                    <tr><th>Service</th><th>Price</th></tr>
+                    <tr><td>Home visit</td><td>11 &euro; p.d. exlusive food and necessities</td></tr>
+                    <tr><td>Pension</td><td>15 &euro; p.d. all inclusive</td> </tr>
+                </table>
+            </div>
+
+            <!--prices and services calculator-->
+            <div class="input">
+                <!--herader-->
+                <h3 id ="calculator">Calculate your prices</h3>
+                <!--input fieldes-->
+                <input type="radio" name="Service" value="H" id="h">
+                <label for="h">Home visit</label>
+                <input type="radio" name="Service" value="P" id="p">
+                <label for="p">Pension</label><br>
+                <label for="date-from">From:</label>
+                <input type="date" id="date-from"><br>
+                <label for="date-till">Until:</label>
+                <input type="date" id="date-till"><br>
+                <div id="date-warning" class="warnings"></div>
+                <label for="number-of-days">Number of Days:</label>
+                <input type="text" id="number-of-days" placeholder="or enter Number of days"><br>
+                <div class="warnings" id="dur-warning"></div>
+                <label for="food">I bring/have the cat food</label>
+                <input type="checkbox" id="food" value="food"><br>
+                <label for="other">I have everything else my cat needs</label>
+                <input type="checkbox" id="other" value="other"><br>
+                <!--result as table? with disclaimer for prices-->
+                <button id="calc">Calculate prize</button>
+                <!--Table for the calculations-->
+                <table class="price" id="overeview"></table>
+                
+                <div id="result">
+                    <p class="warnings">The prices are only an estimate. To get an exact price please contact us,
+                        as it highly depends on your cat's or cats' needs.
+                    </p>
+                    
+                </div>
+            </div>
+        </section>
+            <!--contact-->
+            <footer>
+                <div class="fo-overlay">
+                <h4>Contact us at:</h4>
+                <table>
+                    <tr><th>Mobile:</th><td>+1 *******202</td></tr>
+                    <tr><th>E-mail:</th><td>*****@****.com</td></tr>
+                    <tr><th>Social media:</th><td>                  
+                            <a href="https://www.instagram.com/"><img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/480px-Instagram_logo_2016.svg.png" alt="Instergramm"></a>
+                            <a href="https://de-de.facebook.com/"><img class="icon" src="http://img.talkandroid.com/uploads/2013/09/Facebook_Large_Icon-450x450.png" alt="facebook"></a>
+                        </td>
+                    </tr>
+                </table></div>
+                
+            </footer>
+        
+        </div>
+    </body>
+</html>
